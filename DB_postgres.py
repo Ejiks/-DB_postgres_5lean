@@ -60,8 +60,10 @@ connection = engine.connect()
 #     WHERE id_album = {i/5};
 #     """)
 
+
+
 pprint(connection.execute(
 """
-SELECT * from track;
+SELECT * from album;
 """
 ).fetchall())
